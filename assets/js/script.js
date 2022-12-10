@@ -174,13 +174,15 @@ function storeHighscore() {
 submitBtn.addEventListener("click", function (event) {
   event.preventDefault();
 
+  window.location.href='highscore.html';
+
   finalScore = {
     id: userInitial.value,
     score: timeLeft,
   };
 
   // Return from function early if submitted blank
-  if (finalScore === "") {
+  if (finalScore == "") {
     return;
   }
 
@@ -190,13 +192,17 @@ submitBtn.addEventListener("click", function (event) {
 
   // Store updated todos in localStorage
   storeHighscore();
-  showHighscore();
   saveScore();
 });
 
 // When clear highscore is clicked
 clearHsBtn.addEventListener("click", clearScores);
-
 function clearScores() {
   localStorage.clear();
 }
+
+// whne go back button is clicked.
+goBackBtn.addEventListener("click", clearScores);
+function goBack() {
+  window.location.href='index.html';
+} 

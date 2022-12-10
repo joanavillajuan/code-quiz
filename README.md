@@ -10,3 +10,4 @@ As a developer, I can have better chances getting employed by utalising Web APIs
 ![code-quiz](assets/images/code-quiz_index.html.png)
 
 #### Deployment Link
+https://joanavillajuan.github.io/code-quiz/
