@@ -8,18 +8,47 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="header">
-      <h6>View Highscore</h6>
-      <p class="timer">Timer:</p>
-    </div>
-    <div class="start-page">
+    <header class="header">
+      <a href="highscore.html" id="view-hs">View Highscore</a>
+      <p id="timer">Time: </p>
+    </header>
+
+    <!-- The landing page when browser is loaded -->
+    <section class="start-page">
       <h1>Coding Quiz Challenge</h1>
       <p>
         Try to answer the following code related questions within the time
-        limit.Keep in mind that incorrect answers will penalise your score and
-        time by 10 seconds
+        limit. Keep in mind that incorrect answers will penalise your score/time
+        by 10 seconds!
       </p>
-      <button id="start">Start Quiz</button>
-    </div>
+      <button id="start-btn">Start Quiz</button>
+    </section>
+
+    <!-- the quiz questions and choices  -->
+    <section class="quiz-page">
+      <h2 class="question"></h2>
+      <div class="quiz-choices">
+        <button id="A" class="choice-btn"></button>
+        <button id="B" class="choice-btn"></button>
+        <button id="C" class="choice-btn"></button>
+        <button id="D" class="choice-btn"></button>
+        <hr id="linebreak">
+        <p id="quiz-answer"></p>
+      </div>
+    </section>
+
+    <!-- user intial for highscore-->
+    <section class="score-page">
+      <h1>All done!</h1>
+      <p id="score"></p>
+      <div class="initial-input">
+        <label for="intial">Enter initial:</label>
+        <input type="text" name="intial" id="intial" class="user-initial" />
+        <a href="highscore.html">
+        <button id="submit-btn">Submit</button>
+      </a>
+      </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

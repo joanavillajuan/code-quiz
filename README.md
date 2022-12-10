@@ -6,6 +6,7 @@ This weeks challenge, we are to create a web application from scratch building a
 
 As a developer, I can have better chances getting employed by utalising Web APIs and creating an interactive web application.
 
-### Screenshot
+### Screenshot 
+![code-quiz](assets/images/code-quiz_index.html.png)
 
 #### Deployment Link

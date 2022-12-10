@@ -1,0 +1,79 @@
+/* Variables */
+:root {
+  --btn: #540462;
+  --btn-hoover: #dd2ae0;
+  --font: Arial, Helvetica, sans-serif;
+}
+
+/* Element Selectors */
+button {
+  background-color: var(--btn);
+  color: white;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--btn-hoover);
+}
+a {
+  text-decoration: none;
+}
+
+
+/* Class Selectors */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-family: var(--font);
+}
+.start-page {
+  text-align: center;
+  margin: 10%;
+  font-size: 28px;
+  font-family: var(--font);
+}
+.quiz-page, .score-page  {
+  display: none;
+  text-align: center;
+  font-size: 28px;
+  font-family: var(--font);
+  margin: 5% 20% auto ;
+}
+
+.choice-btn {
+  display: list-item;
+  margin: 10px;
+}
+.user-initial {
+  padding: 10px 5px 10px 5px;
+  font-size: 16px;
+}
+
+/* Id Selectors */
+#view-hs {
+  text-align: left;
+  color: var(--btn-hoover);
+}
+#timer {
+  text-align: right;
+}
+#linebreak {
+  display: none;
+}
+#quiz-answer {
+color: grey;
+}
+
+
+/* Highscore page */
+.highscore-page {
+  text-align: center;
+  margin: 10%;
+  font-size: 28px;
+  font-family: var(--font);
+}
